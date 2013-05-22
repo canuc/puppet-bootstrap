@@ -18,7 +18,7 @@ elif [ `uname -s` = "Darwin" ]; then
 	pushd '/usr/local'
 		mkdir homebrew && curl -L https://github.com/mxcl/homebrew/tarball/master | tar xz --strip 1 -C homebrew
 	popd
-	ln -s /usr/local/bin/brew /usr/local/bin/brew
+	ln -s /usr/local/bin/brew /usr/local/homebrew/bin/brew
 	sudo -S installer -verbose -pkg facter-1.6.3.pkg -target "/Volumes/Macintosh HD"
 	sudo -S installer -verbose -pkg hiera-1.2.0-rc1.pkg -target "/Volumes/Macintosh HD"
 	sudo -S installer -verbose -pkg hiera-puppet-1.0.0.pkg -target "/Volumes/Macintosh HD"
